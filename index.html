@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sticky Example</title>
+  <link rel="stylesheet" href="assets/stylesheets/main.css">
+  
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script>
+  $(function() {
+    var win         = $(window),
+    fixed_element   = $('nav'),
+    element_offset  = fixed_element.offset().top;
+
+    win.scroll(function() {
+        if (element_offset < win.scrollTop()) {
+            fixed_element.addClass("fixed");
+        } else {
+            fixed_element.removeClass("fixed");
+        }
+    });
+  });
+  </script>
+
+</head>
+<body>
+  <div class="branding">
+  </div>
+  <nav class="sticky">
+    <h1>I'm sticky!</h1>
+  </nav>
+  <div class="container">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, nisi, explicabo deleniti deserunt perspiciatis et fugit doloribus voluptatem id qui cum sapiente veritatis velit error beatae consequuntur harum. Tempore, deserunt dolores perferendis. Maiores provident ab nihil. Aliquam, velit, perferendis, doloribus, dolore officia magni fuga consectetur aliquid esse tempora quia possimus quisquam sunt explicabo tenetur nemo ducimus fugiat illum cupiditate voluptate adipisci dolor perspiciatis repellendus amet ipsum dolores ea quam autem ullam distinctio. Praesentium, aspernatur, ex, est unde numquam blanditiis atque voluptas expedita deleniti quaerat maiores sit ullam similique dolores repellendus officiis eos dolor odio fuga ipsum rerum odit voluptatum mollitia ipsa dignissimos accusantium laborum. Exercitationem, quod, omnis odit libero fugit repellat voluptas quisquam laboriosam dolores vitae cupiditate sapiente iste dignissimos tempore distinctio corrupti fugiat eius odio harum pariatur cumque fuga ipsum impedit natus dolor facere laudantium iure ad quibusdam. Placeat, iste, dolores, recusandae et labore ad alias eos culpa perferendis reiciendis officia tempore nobis vero explicabo officiis excepturi debitis ut necessitatibus voluptate voluptatum unde doloremque in repellendus corporis laborum incidunt praesentium mollitia cupiditate architecto expedita error porro quas pariatur. Illum, consectetur, sint atque facere cum possimus dignissimos aliquid. Molestias, similique, necessitatibus, nesciunt nam alias veniam non doloribus modi in aut nostrum adipisci rerum qui blanditiis quod reprehenderit debitis harum dolor illo eum repellat provident dignissimos repudiandae commodi laborum. Dolorum, sequi, unde, alias ex obcaecati non optio aliquid suscipit in eum dolores cumque labore numquam vel totam necessitatibus saepe tempore recusandae incidunt asperiores provident voluptatibus dignissimos dolor explicabo nisi. Exercitationem, temporibus.</p>
+  </div>
+</body>
+</html>
